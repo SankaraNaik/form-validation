@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+
+
+    <div class="container">
+      <header>SignUp</header>
+      <form action="#">
+        <div class="field email-field">
+          <div class="input-field">
+            <input type="email" placeholder="Enter your email" class="email" />
+          </div>
+
+          <span class="error email-error">
+            <i class="bx bx-error-circle error-icon"></i>
+            <p class="error-text">Please enter a valid email</p>
+          </span>
+        </div>
+
+        <div class="field create-password">
+          <div class="input-filed">
+            <input type="password" placeholder="Create password" class="password"/>
+            <i class="bx bx-hide show-hide"></i>
+          </div>
+
+          <span class="error password-error">
+            <i class="bx bx-error-circle error-icon"></i>
+            <p class="error-text">
+              Please enter atleast 8 character with number , symbol , small and
+              captial letter .
+            </p>
+          </span>
+        </div>
+
+        <div class="feild confrim-password">
+          <div class="input-field">
+            <input type="password" placeholder="confrim-password" class="cPassword">
+            <i class="bx bx-hide show-hide"></i>
+          </div>
+          <span class="error cPassword-error">
+            <i class="bx bx-error-circle error-icon"></i>
+            <p class="error-text">password don't match</p>
+          </span>
+        </div>
+
+        <div class="input-field button">
+          <input type="submit" value="Submit Now" />
+        </div>
+      </form>
+    </div>
+
+    <script src="./form.js"></script>
+  </body>
+</html>
